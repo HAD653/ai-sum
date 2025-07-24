@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>IA SUM</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>IA SUM</h1>
+
+  
+<div class="btn-group">
+  <button id="apiBtn"   class="btn primary">API Summary</button>
+  <button id="localBtn" class="btn secondary">Local Summary</button>
+  <button id="expandBtn" class="btn tertiary hidden">Full screen</button>
+</div>
+
+
+  <div id="summaryWrapper" class="summary-wrapper hidden">
+    <pre id="result" class="result"></pre>
+    <button id="copyBtn" class="copy-btn" title="Copier le résumé" aria-label="Copier">
+      <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" fill="none"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="8"  y="2"  width="8" height="4" rx="1" ry="1"></rect>
+        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6
+                 a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+      </svg>
+    </button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

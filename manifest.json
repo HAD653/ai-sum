@@ -1,0 +1,35 @@
+{
+  "name": "ai-sum",
+  "description": "Summarizes the current page using Hugging Face's BART model (facebook/bart-large-cnn)",
+  "version": "1.0.0",
+  "manifest_version": 3,
+
+  "action": {
+    "default_title": "ai-sum",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage" 
+  ],
+
+  "host_permissions": [
+    "https://api-inference.huggingface.co/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js","readability.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["view.html", "view.js", "style.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

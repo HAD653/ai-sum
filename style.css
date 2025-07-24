@@ -1,0 +1,83 @@
+
+body {
+  font-family: "Segoe UI", Roboto, system-ui, sans-serif;
+  margin: 0;
+  padding: 16px;
+  width: 350px;
+  background: #f5f7fa;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0 0 16px;
+  text-align: center;
+  color: #1f2d3d;
+}
+
+.btn-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.primary   { background: #4a90e2; color: #fff; }
+.secondary { background: #ced9e6; color: #1f2d3d; }
+
+.btn:not(:disabled):hover   { transform: translateY(-1px); }
+.btn:not(:disabled):active  { transform: translateY( 0  ); }
+
+/* Conteneur du résumé */
+.summary-wrapper {
+  position: relative;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  padding: 12px 40px 12px 12px; 
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+
+.result {
+  margin: 0;
+  white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+
+.copy-btn:hover { opacity: 1; }
+
+.tertiary {
+  background: #fff;
+  color: #1f2d3d;
+  border: 1px solid #ced9e6;
+}
+.hidden { display: none; }
