@@ -18,6 +18,12 @@ It offers two modes: one using a local model and the other via Hugging Face's AP
 
 ---
 
+## 🖼️ Preview
+
+![AI-Sum Screenshot](https://i.imgur.com/zhumc0I.png)
+
+---
+
 ## 🛠️ Tech Stack
 
 - Frontend: HTML, JS (Chrome Extension APIs)
@@ -28,14 +34,14 @@ It offers two modes: one using a local model and the other via Hugging Face's AP
 
 ## 🔧 Setup
 
-### ✅ Option 1 – Use with Hugging Face (easiest)
+### ✅ Option 1 – Use with Hugging Face (API)
 
 Open popup.js and add your Hugging Face token:
 ```js
 const HF_TOKEN = "Bearer <your_token_here>";
 ```
 
-### ⚡ Option 2 – Run it locally (no API)
+### ⚡ Option 2 – Run it locally 
 
 ```bash
 python -m venv venv
