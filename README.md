@@ -5,26 +5,26 @@ It offers two modes: one using a local model and the other via Hugging Face's AP
 
 ---
 
-## 🚀 Features
+## Features
 
-- 🔍 Summarizes any webpage in 5 sentences
-- 🌐 Works in English and French
-- 🧠 Two modes:
+-  Summarizes any webpage in 5 sentences
+-  Works in English and French
+-  Two modes:
   - **Local model** (FastAPI + Transformers)
   - **Hugging Face API** (BART model)
-- 💾 Saves summaries locally per page
-- 📋 One-click copy & fullscreen view
-- 💡 Clean and fast UI with no tracking
+-  Saves summaries locally per page
+-  One-click copy & fullscreen view
+-  Clean and fast UI with no tracking
 
 ---
 
-## 🖼️ Preview
+##  Preview
 
 ![AI-Sum Screenshot](https://i.imgur.com/zhumc0I.png)
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - Frontend: HTML, JS (Chrome Extension APIs)
 - Backend: Python, FastAPI, HuggingFace Transformers
@@ -32,16 +32,16 @@ It offers two modes: one using a local model and the other via Hugging Face's AP
 - Optional API via HuggingFace
 
 
-## 🔧 Setup
+##  Setup
 
-### ✅ Option 1 – Use with Hugging Face (API)
+###  Option 1 – Use with Hugging Face (API)
 
 Open popup.js and add your Hugging Face token:
 ```js
 const HF_TOKEN = "Bearer <your_token_here>";
 ```
 
-### ⚡ Option 2 – Run it locally 
+###  Option 2 – Run it locally 
 
 ```bash
 python -m venv venv
